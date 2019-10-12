@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-variant-ligatures: none;
+   color: #fff;
+   background: linear-gradient(45deg, #223A3C, #2C4446);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   zoom: 1;
+}
+
+a {
+   cursor: pointer;
+}
+
+#content {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   width: 100%;
+   transform: translate(-50%, -50%);
+   z-index: 999;
+   text-align: center;
+}
+
+#subscribe-btn {
+   font-size: 18pt;
+   color: #fff;
+   text-transform: uppercase;
+   background: none;
+   font-family: 'Roboto', sans-serif;
+   border: 3.5px solid white;
+   border-radius: 150px;
+   padding: 0.75em 2em 0.75em 2em;
+   -webkit-transition: all 0.2s ease;
+   -moz-transition: all 0.2s ease;
+   -ms-transition: all 0.2s ease;
+   -o-transition: all 0.2s ease;
+   transition: all 0.2s ease;
+}
+
+#subscribe-btn:hover {
+   background-color: white;
+   color: #223A3C;
+   box-shadow: 0 2px 20px 0 rgba(0,0,0,0.2);
+   -webkit-transition: all 0.2s ease;
+   -moz-transition: all 0.2s ease;
+   -ms-transition: all 0.2s ease;
+   -o-transition: all 0.2s ease;
+   transition: all 0.2s ease;
+}
+
+#subscribe-btn:active {
+   background-color: #e4e4e4;
+   border: 4.5px solid #e4e4e4;
+}
+
+#wordmark {
+   font-size: 48pt;
+}
+
+#socials {
+   margin-top: 2em;
+   font-size: 24pt;
+}
+
+#socials a {
+   color: #fff;
+   padding: 0.5em 0.55em;
+   opacity: .5;
+   -webkit-transition: all 0.2s ease;
+   -moz-transition: all 0.2s ease;
+   -ms-transition: all 0.2s ease;
+   -o-transition: all 0.2s ease;
+   transition: all 0.2s ease;
+}
+
+#socials a:hover {
+   opacity: .95;
+}
+
+footer {
+   position: fixed;
+   bottom: 10px;
+   height: 30px;
+   width: 100%;
+   padding-top: 10px;
+   color: #fff;
+   opacity: .5;
+   z-index: 999;
+   text-align: center;
+   font-size: 12pt;
+}
+
+#inp {
+   font-family: 'Roboto', sans-serif;
+   font-size: 14pt;
+   text-align: center;
+   background: none;
+   display: inline;
+   color: #fff;
+   border: none;
+   padding: 0.5em 0.5em;
+   border-bottom: 2px solid #ffffff80;
+   margin-top: 1em;
+   margin-bottom: 2em;
+}
+
+#inp:focus {
+   border-bottom: 2px solid white;
+   -webkit-transition: all 0.2s ease;
+   -moz-transition: all 0.2s ease;
+   -ms-transition: all 0.2s ease;
+   -o-transition: all 0.2s ease;
+   transition: all 0.2s ease;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: .5;
+}
+
+
+
+/* CSS MEDIA QUERIES */
+/* ----------- iPhone X or Similar ----------- */
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+   #wordmark {
+      font-size: 80pt;
+   }
+
+   #subscribe-btn {
+      font-size: 45pt;
+      border: 7.5px solid white;
+   }
+
+   #socials {
+      font-size: 50pt;
+   }
+
+   footer {
+      font-size: 30pt;
+      margin-bottom: 1em;
+   }
+
+   #inp-label {
+      font-size: 34pt;
+   }
+
+   #inp {
+      font-size: 34pt;
+   }
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+    #wordmark {
+      font-size: 40pt;
+   }
+
+   #subscribe-btn {
+      font-size: 18pt;
+   }
+
+   #socials {
+      margin-top: 1em;
+      font-size: 16pt;
+   }
+
+}
+
+/* iPhone 6/7/8 or Similar */
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+   #wordmark {
+      font-size: 80pt;
+   }
+
+   #subscribe-btn {
+      font-size: 45pt;
+      border: 7.5px solid white;
+   }
+
+   #socials {
+      font-size: 50pt;
+   }
+
+   footer {
+      font-size: 30pt;
+      margin-bottom: 1em;
+   }
+
+   #inp-label {
+      font-size: 34pt;
+   }
+
+   #inp {
+      font-size: 34pt;
+   }
+}
